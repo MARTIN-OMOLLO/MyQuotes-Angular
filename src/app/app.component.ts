@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Quotes} from './quotes';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MYQUOTES'
-  quote:string[];
+  
 
-  constructor(){
-    this.quote=[ 'love much' ,'care more',
-    'In the we will not only have to repent for the sins of bad people but also appaling silence of good people'];
-  }
-}
+};
