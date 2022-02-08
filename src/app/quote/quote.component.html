@@ -1,1 +1,12 @@
-<p>quote works!</p>
+<div *ngFor='let quote of quotes; let i = index'>
+<h2>{{quote.title}}</h2>
+<h3> Created by{{quote.author}} on{{quote.dateposted}}</h3>
+<h4>{{quote.quotebody}}</h4>
+<button (click)='toggleDetails(i)' class="btn btn-primary">comment</button>
+<div *ngIf="quote.showDescription">
+    <app-quote-details></app-quote-details>
+</div>
+</div>
+<div>
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+</div>
