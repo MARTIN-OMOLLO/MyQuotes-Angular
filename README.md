@@ -1,4 +1,4 @@
-# MYQUOTES
+# MYQUOTES.
 
 ## Authors
 - [Martin Omollo](https://github.com/MARTIN-OMOLLO/MyQuotes-Angular.git)
